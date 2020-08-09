@@ -8,7 +8,9 @@
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/lone/first_example/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/lone/first_example/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/lone/first_example/Rental.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/lone/first_example/Rental.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/refactoring/target/classes/com/lone/first_example/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/target/classes/com/lone/first_example/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/target/classes/com/lone/first_example/Rental.class" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/target/classes/com/lone/first_example/Rental.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -156,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595688962350</updated>
       <workItem from="1595688966442" duration="9651000" />
-      <workItem from="1596974044102" duration="7042000" />
+      <workItem from="1596974044102" duration="9721000" />
     </task>
     <servers />
   </component>
@@ -180,22 +183,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="384" y="204" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1596985359075" />
-    <state width="1237" height="173" key="GridCell.Tab.0.bottom" timestamp="1596986238807">
+    <state width="1237" height="192" key="GridCell.Tab.0.bottom" timestamp="1596989714930">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="173" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1596986238807" />
-    <state width="1237" height="173" key="GridCell.Tab.0.center" timestamp="1596986238807">
+    <state width="1237" height="192" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1596989714930" />
+    <state width="1237" height="192" key="GridCell.Tab.0.center" timestamp="1596989714930">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="173" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1596986238807" />
-    <state width="1237" height="173" key="GridCell.Tab.0.left" timestamp="1596986238806">
+    <state width="1237" height="192" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1596989714930" />
+    <state width="1237" height="192" key="GridCell.Tab.0.left" timestamp="1596989714930">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="173" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1596986238806" />
-    <state width="1237" height="173" key="GridCell.Tab.0.right" timestamp="1596986238807">
+    <state width="1237" height="192" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1596989714930" />
+    <state width="1237" height="192" key="GridCell.Tab.0.right" timestamp="1596989714930">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="173" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1596986238807" />
+    <state width="1237" height="192" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1596989714930" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1595774744317">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -216,10 +219,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1596982687786" />
-    <state x="371" y="103" key="extract.method.dialog" timestamp="1596985946556">
+    <state x="371" y="103" key="extract.method.dialog" timestamp="1596986689256">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="103" key="extract.method.dialog/0.0.1280.680@0.0.1280.680" timestamp="1596985946556" />
+    <state x="371" y="103" key="extract.method.dialog/0.0.1280.680@0.0.1280.680" timestamp="1596986689256" />
     <state x="284" y="67" width="712" height="546" key="find.popup" timestamp="1596982964060">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
