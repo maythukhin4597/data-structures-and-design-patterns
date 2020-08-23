@@ -10,6 +10,7 @@
     <version>1.0.0</version>
     <modules>
         <module>refactoring</module>
+        <module>designpatterns</module>
     </modules>
     <dependencies>
         <dependency>
