@@ -1,48 +1,49 @@
 package com.lone.first_example;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import com.lone.first_example.state.ChildrenPrice;
+import com.lone.first_example.state.NewReleasePrice;
+import com.lone.first_example.state.Price;
+import com.lone.first_example.state.RegularPrice;
 import lombok.Getter;
+import lombok.Setter;
 
 import static com.lone.first_example.MovieGenre.*;
 
-@Data
-@AllArgsConstructor
 public class Movie {
+    @Setter
+    @Getter
     String title;
-    int priceTag;
+
+//    int priceTag;
+
+    Price price;
 
     public double getCharge(int daysRented) {
-        double result = 0.0;
-        if (priceTag == REGEULAR.getValue()) {
-            result += 1;
-            if (daysRented > 2)
-                result += (daysRented - 2);
-        } else if (priceTag == NEW_RELEASE.getValue()) {
-            result += daysRented * 2;
-        } else if (priceTag == CHILDERN.getValue()) {
-            result += 3;
-            if (daysRented > 3)
-                result += (daysRented - 3) * 3;
-        }
-        return result;
+        return price.getCharge(daysRented);
     }
 
     public int getFrequentPointers(int daysRented) {
-        return (getPriceTag() == NEW_RELEASE.getValue() && daysRented > 1) ? 2 : 1;
+        return price.getFrequentPointers(daysRented);
     }
+
+    public Movie(String title, int priceTag) {
+        this.title = title;
+        setPriceTag(priceTag);
+    }
+
+    public void setPriceTag(int price) {
+        if (price == REGEULAR.getValue()) {
+            this.price = new RegularPrice();
+        } else if (price == NEW_RELEASE.getValue()) {
+            this.price = new NewReleasePrice();
+        } else if (price == CHILDERN.getValue()) {
+            this.price = new ChildrenPrice();
+        }
+    }
+
+    public int getPriceTag() {
+        return price.getPrice();
+    }
+
 }
 
-@Getter
-enum MovieGenre {
-
-    REGEULAR(1),
-    NEW_RELEASE(2),
-    CHILDERN(3);
-
-    int value;
-
-    MovieGenre(int movie) {
-        this.value = movie;
-    }
-}
