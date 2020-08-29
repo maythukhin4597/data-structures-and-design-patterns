@@ -1,4 +1,4 @@
-package behavioral.command.headfirst.after.FanWithState;
+package behavioral.command.headfirst.FanWithState;
 
 public class CeilingFan {
     String location;

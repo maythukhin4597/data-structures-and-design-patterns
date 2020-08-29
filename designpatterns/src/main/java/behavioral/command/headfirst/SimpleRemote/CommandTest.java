@@ -1,12 +1,12 @@
-package behavioral.command.headfirst.after.SimpleRemote;
+package behavioral.command.headfirst.SimpleRemote;
 
-import behavioral.command.headfirst.after.Command;
-import behavioral.command.headfirst.after.Garage.GarageDoor;
-import behavioral.command.headfirst.after.Garage.GarageDoorUp;
-import behavioral.command.headfirst.after.Light.Light;
-import behavioral.command.headfirst.after.Light.LightOn;
-import behavioral.command.headfirst.after.Stereo.Stereo;
-import behavioral.command.headfirst.after.Stereo.StereoOnWithCDCommand;
+import behavioral.command.headfirst.Command;
+import behavioral.command.headfirst.Garage.GarageDoor;
+import behavioral.command.headfirst.Garage.GarageDoorUp;
+import behavioral.command.headfirst.Light.Light;
+import behavioral.command.headfirst.Light.LightOn;
+import behavioral.command.headfirst.Stereo.Stereo;
+import behavioral.command.headfirst.Stereo.StereoOnWithCDCommand;
 
 public class CommandTest {
     public static void main(String[] args) {

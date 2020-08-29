@@ -1,4 +1,4 @@
-package behavioral.command.headfirst.after.Stereo;
+package behavioral.command.headfirst.Stereo;
 
 public class Stereo {
 

@@ -1,6 +1,6 @@
-package behavioral.command.headfirst.after.PartyRemote;
+package behavioral.command.headfirst.PartyRemote;
 
-import behavioral.command.headfirst.after.Command;
+import behavioral.command.headfirst.Command;
 
 import java.util.List;
 

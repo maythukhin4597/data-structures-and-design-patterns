@@ -1,4 +1,4 @@
-package behavioral.command.headfirst.after;
+package behavioral.command.headfirst;
 
 public class NoCommand implements Command {
     @Override

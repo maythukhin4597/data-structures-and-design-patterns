@@ -1,6 +1,6 @@
-package behavioral.command.headfirst.after.FanWithState;
+package behavioral.command.headfirst.FanWithState;
 
-import behavioral.command.headfirst.after.Command;
+import behavioral.command.headfirst.Command;
 
 public class FanOffCommand implements Command {
     CeilingFan ceilingFan;

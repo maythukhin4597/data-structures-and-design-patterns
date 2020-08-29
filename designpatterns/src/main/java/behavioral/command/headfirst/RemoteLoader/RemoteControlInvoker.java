@@ -1,7 +1,7 @@
-package behavioral.command.headfirst.after.RemoteLoader;
+package behavioral.command.headfirst.RemoteLoader;
 
-import behavioral.command.headfirst.after.Command;
-import behavioral.command.headfirst.after.NoCommand;
+import behavioral.command.headfirst.Command;
+import behavioral.command.headfirst.NoCommand;
 
 import java.util.ArrayList;
 import java.util.List;

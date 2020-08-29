@@ -1,20 +1,20 @@
-package behavioral.command.headfirst.after.RemoteLoader;
+package behavioral.command.headfirst.RemoteLoader;
 
-import behavioral.command.headfirst.after.Command;
-import behavioral.command.headfirst.after.FanWithState.CeilingFan;
-import behavioral.command.headfirst.after.FanWithState.FanHighCommand;
-import behavioral.command.headfirst.after.FanWithState.FanMediumCommand;
-import behavioral.command.headfirst.after.FanWithState.FanOffCommand;
-import behavioral.command.headfirst.after.Garage.GarageDoor;
-import behavioral.command.headfirst.after.Garage.GarageDoorDown;
-import behavioral.command.headfirst.after.Garage.GarageDoorUp;
-import behavioral.command.headfirst.after.Light.Light;
-import behavioral.command.headfirst.after.Light.LightOff;
-import behavioral.command.headfirst.after.Light.LightOn;
-import behavioral.command.headfirst.after.PartyRemote.MacroCommand;
-import behavioral.command.headfirst.after.Stereo.Stereo;
-import behavioral.command.headfirst.after.Stereo.StereoOnWithCDCommand;
-import behavioral.command.headfirst.after.Stereo.StereoffWithCDCommand;
+import behavioral.command.headfirst.Command;
+import behavioral.command.headfirst.FanWithState.CeilingFan;
+import behavioral.command.headfirst.FanWithState.FanHighCommand;
+import behavioral.command.headfirst.FanWithState.FanMediumCommand;
+import behavioral.command.headfirst.FanWithState.FanOffCommand;
+import behavioral.command.headfirst.Garage.GarageDoor;
+import behavioral.command.headfirst.Garage.GarageDoorDown;
+import behavioral.command.headfirst.Garage.GarageDoorUp;
+import behavioral.command.headfirst.Light.Light;
+import behavioral.command.headfirst.Light.LightOff;
+import behavioral.command.headfirst.Light.LightOn;
+import behavioral.command.headfirst.PartyRemote.MacroCommand;
+import behavioral.command.headfirst.Stereo.Stereo;
+import behavioral.command.headfirst.Stereo.StereoOnWithCDCommand;
+import behavioral.command.headfirst.Stereo.StereoffWithCDCommand;
 
 import java.util.Arrays;
 import java.util.List;

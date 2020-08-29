@@ -1,6 +1,6 @@
-package behavioral.command.headfirst.after.Garage;
+package behavioral.command.headfirst.Garage;
 
-import behavioral.command.headfirst.after.Command;
+import behavioral.command.headfirst.Command;
 
 public class GarageDoorDown implements Command {
     private GarageDoor garageDoor;

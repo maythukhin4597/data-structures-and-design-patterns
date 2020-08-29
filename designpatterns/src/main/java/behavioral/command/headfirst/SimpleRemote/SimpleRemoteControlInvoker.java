@@ -1,6 +1,6 @@
-package behavioral.command.headfirst.after.SimpleRemote;
+package behavioral.command.headfirst.SimpleRemote;
 
-import behavioral.command.headfirst.after.Command;
+import behavioral.command.headfirst.Command;
 
 public class SimpleRemoteControlInvoker {
     Command slot;

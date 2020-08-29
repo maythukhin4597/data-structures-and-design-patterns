@@ -1,6 +1,6 @@
-package behavioral.command.headfirst.after.Stereo;
+package behavioral.command.headfirst.Stereo;
 
-import behavioral.command.headfirst.after.Command;
+import behavioral.command.headfirst.Command;
 
 public class StereoffWithCDCommand implements Command {
     private Stereo stereo;

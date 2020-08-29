@@ -1,6 +1,6 @@
-package behavioral.command.headfirst.after.Light;
+package behavioral.command.headfirst.Light;
 
-import behavioral.command.headfirst.after.Command;
+import behavioral.command.headfirst.Command;
 
 public class LightOn implements Command {
     private Light light;

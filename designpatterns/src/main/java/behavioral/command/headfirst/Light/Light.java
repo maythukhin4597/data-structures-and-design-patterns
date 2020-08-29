@@ -1,4 +1,4 @@
-package behavioral.command.headfirst.after.Light;
+package behavioral.command.headfirst.Light;
 
 public class Light {
     private String location;

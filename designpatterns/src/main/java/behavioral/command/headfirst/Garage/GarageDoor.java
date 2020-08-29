@@ -1,4 +1,4 @@
-package behavioral.command.headfirst.after.Garage;
+package behavioral.command.headfirst.Garage;
 
 public class GarageDoor {
 
