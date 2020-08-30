@@ -7,11 +7,11 @@ public class Light {
         this.location = location;
     }
 
-    void on() {
+    public void on() {
         System.out.println(location + "Turn on the light");
     }
 
-    void off() {
+    public void off() {
         System.out.println(location + "Turn off the light");
     }
 }
