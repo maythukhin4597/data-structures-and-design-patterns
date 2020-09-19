@@ -1,0 +1,17 @@
+package creational.factory.headfirst.franchise;
+
+import creational.factory.headfirst.franchise.pizzas.Pizza;
+
+public abstract class PizzaStore {
+
+    public Pizza orderPizza(String type) {
+        Pizza pizza = createPizza(type);
+        pizza.prepare();
+        pizza.bake();
+        pizza.cut();
+        pizza.box();
+        return pizza;
+    }
+
+    abstract Pizza createPizza(String type);
+}
