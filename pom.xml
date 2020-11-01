@@ -11,6 +11,8 @@
     <modules>
         <module>refactoring</module>
         <module>designpatterns</module>
+        <module>datastructure</module>
+        <module>coolstuff</module>
     </modules>
     <dependencies>
         <dependency>
