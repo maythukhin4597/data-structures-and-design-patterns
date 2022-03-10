@@ -1,4 +1,6 @@
-package queue;
+package queue.NormalQueue;
+
+import queue.Queue;
 
 public class SimpleQueueImpl implements Queue {
     int SIZE = 5;
@@ -18,7 +20,7 @@ public class SimpleQueueImpl implements Queue {
     }
 
     public boolean isFull() {
-        return rear == SIZE;
+        return rear == SIZE - 1;
     }
 
     @Override
@@ -53,25 +55,26 @@ public class SimpleQueueImpl implements Queue {
     public void enQueue(Object element) {
         if (isFull()) {
             System.out.println("Queue is full");
-        } else {
-            if (front == -1)
-                front = 0;
-            rear++;
-            items[rear] = element;
-            System.out.println("Added " + element);
+            return;
         }
+        if (isEmpty()) {
+            front = rear = 0;
+        } else {
+            rear++;
+        }
+        items[rear] = element;
+        System.out.println("Added " + element);
     }
 
     public Object deQueue() {
         Object element;
         if (isEmpty()) {
             System.out.println("Queue is empty");
-            return (-1);
+            return null;
         } else {
             element = items[front];
             if (front >= rear) {
                 front = -1;
-                rear = -1;
             } /* Q has only one element, so we reset the queue after deleting it. */ else {
                 front++;
             }

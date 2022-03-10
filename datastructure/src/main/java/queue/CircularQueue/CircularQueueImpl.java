@@ -1,4 +1,6 @@
-package queue;
+package queue.CircularQueue;
+
+import queue.Queue;
 
 public class CircularQueueImpl implements Queue<Object> {
     int SIZE = 5;
@@ -21,7 +23,7 @@ public class CircularQueueImpl implements Queue<Object> {
     public Object deQueue() {
         if (isEmpty()) {
             System.out.println("Queue is empty");
-            return -1;
+            return null;
         }
         Object result = items[front];
         if (front == rear) {
@@ -38,13 +40,14 @@ public class CircularQueueImpl implements Queue<Object> {
             System.out.println("Queue is full");
             return;
         }
-        if (front == -1)
-            front = 0;
-        rear = (rear + 1) % SIZE;
+        if (front == -1) {
+            front = rear = 0;
+        } else {
+            rear = (rear + 1) % SIZE;
+        }
         items[rear] = o;
         System.out.println("Added " + o);
     }
-
 
     @Override
     public boolean isEmpty() {
