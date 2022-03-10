@@ -1,5 +1,5 @@
 package behavioral.strategy.headfirst.after;
-
+//enforce concrete classess constructor have some same method calls // pls check factory
 public abstract class Duck {
     String name;
     FlyBehavior flyBehavior;
