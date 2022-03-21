@@ -1,24 +1,14 @@
 package queue;
 
+import queue.Dequeue.DequeueImpl;
+import queue.PriorityQueue.PriorityQueueImpl;
+
 public class QueueTest {
     public static void main(String[] args) {
-//        testQueue(new SimpleQueueImpl());
-//        testQueue(new CircularQueueImpl());
-        testCQueue(new SimpleQueueImpl());
+        dequeueTest();
     }
 
-    static void display(Queue<Integer> queue) {
-
-        Queue<Integer> tempQueue = queue.clone();
-        if (tempQueue.isEmpty())
-            return;
-        for (int i = queue.getFront(); i <= queue.getRear(); i++) {
-            Integer x = tempQueue.deQueue();
-            System.out.println(x + " ");
-        }
-    }
-
-    static void testQueue(Queue q) {
+    static void queueTestSimple(Queue q) {
         // deQueue is not possible on empty queue
         q.deQueue();
 
@@ -32,8 +22,6 @@ public class QueueTest {
         // 6th element can't be added to queue because queue is full
         q.enQueue(6);
 
-        display(q);
-
 //         deQueue removes element entered first i.e. 1
         q.deQueue();
 
@@ -41,7 +29,7 @@ public class QueueTest {
         display(q);
     }
 
-    public static void testCQueue(Queue q) {
+    public static void queueTest(Queue q) {
         q.deQueue();
 
         q.enQueue(1);
@@ -52,35 +40,73 @@ public class QueueTest {
 
         // Fails to enqueue because front == 0 && rear == SIZE - 1
         q.enQueue(6);
+        display(q);
 
-        displayCQueue(q);
-        Integer elem = (Integer) q.deQueue();
-
-        if (elem != -1) {
-            System.out.println("Deleted Element is " + elem);
-        }
-        displayCQueue(q);
+        q.deQueue();
+        display(q);
 
         q.enQueue(7);
 
-        displayCQueue(q);
-
         // Fails to enqueue because front == rear + 1
         q.enQueue(8);
+        display(q);
 
-        displayCQueue(q);
+        q.deQueue();
+        q.deQueue();
+        q.deQueue();
+        q.deQueue();
+        q.deQueue();
+        display(q);
+
     }
 
-    static void displayCQueue(Queue<Integer> queue) {
-
-        Queue<Integer> tempQueue = queue.clone();
-        if (tempQueue.isEmpty())
-            return;
-        for (int i = queue.getFront(); i != queue.getRear(); i = (i + 1) % queue.size()) {
-            Integer x = tempQueue.deQueue();
-            System.out.println(x + " ");
-        }
+    public static void display(Queue queue) {
+        QueueFactory.createDisplay(queue)
+                .ifPresentOrElse(Display::display,
+                        () -> System.out.println("No item found to display"));
     }
 
+    public static void priorityHeapQueueTest() {
+
+        PriorityQueueImpl queue = new PriorityQueueImpl();
+        queue.insert(3);
+        queue.insert(4);
+        queue.insert(9);
+        queue.insert(5);
+        queue.insert(2);
+
+        System.out.println("Max-Heap array: ");
+        queue.printArray();
+
+        queue.deleteNode(4);
+        System.out.println("After deleting an element: ");
+        queue.printArray();
+    }
+
+    public static void dequeueTest() {
+
+        DequeueImpl dq = new DequeueImpl(4);
+
+        System.out.println("Insert element at rear end : 12 ");
+        dq.insertrear(12);
+
+        System.out.println("insert element at rear end : 14 ");
+        dq.insertrear(14);
+
+        System.out.println("get rear element : " + dq.getRear());
+
+        dq.deleterear();
+        System.out.println("After delete rear element new rear become : " + dq.getRear());
+
+        System.out.println("inserting element at front end");
+        dq.insertfront(13);
+
+        System.out.println("get front element: " + dq.getFront());
+
+        dq.deletefront();
+
+        System.out.println("After delete front element new front become : " + +dq.getFront());
+
+    }
 }
 

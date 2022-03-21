@@ -1,5 +1,8 @@
 package queue;
 
+import java.util.Iterator;
+import java.util.List;
+
 //Complexity O(1)
 public interface Queue<Object> {
 
@@ -20,6 +23,7 @@ public interface Queue<Object> {
     int getFront();
 
     int getRear();
+
 }
 //applications
 //CPU scheduling, Disk Scheduling
