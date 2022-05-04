@@ -15,16 +15,17 @@ public class BinarySearch {
     }
 
     static int binarySearch(int[] arr, int item) {
+        boolean isFound = false;
         if (Objects.isNull(arr) || arr.length == 0) {
             return -1;
         }
 
-        int begin = 0, last = arr.length - 1, mid = -1;
-        int midItem = 0;
+        int begin = 0, last = arr.length - 1, mid = -1, midItem = 0;
 
         while (begin <= last) {
             mid = (begin + last) / 2;
             if ((midItem = arr[mid]) == item) {
+                isFound = true;
                 break;
             }
             if (item > midItem) {
@@ -33,6 +34,6 @@ public class BinarySearch {
                 last = mid - 1;
             }
         }
-        return mid;
+        return isFound ? mid : -1;
     }
 }
