@@ -4,15 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.lone</groupId>
-    <artifactId>LoneCode</artifactId>
+    <groupId>com.uit</groupId>
+    <artifactId>data-structures-and-design-patterns</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
     <modules>
-        <module>refactoring</module>
         <module>designpatterns</module>
         <module>datastructure</module>
-        <module>coolstuff</module>
     </modules>
     <dependencies>
         <dependency>
@@ -21,7 +19,5 @@
             <version>1.18.12</version>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
-
 </project>
